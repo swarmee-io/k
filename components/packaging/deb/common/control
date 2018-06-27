@@ -3,7 +3,7 @@ Section: admin
 Priority: optional
 Maintainer: Source <source@swarmee.io>
 Standards-Version: 3.9.6
-Homepage: https://dockerproject.org
+Homepage: https://swarmee.io
 Vcs-Browser: https://github.com/swarmee-io/kengine
 Vcs-Git: git://github.com/swarmee-io/kengine.git
 
