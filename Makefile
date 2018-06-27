@@ -14,6 +14,7 @@ $(CLI_DIR)/build/docker:
 
 deb: ## build deb packages
 	$(MAKE) VERSION=$(VERSION) CLI_DIR=$(CLI_DIR) ENGINE_DIR=$(ENGINE_DIR) -C $(PACKAGING_DIR) deb
+	bash -c "( cd components/repack && bash -x ./build.sh )"
 
 rpm: ## build rpm packages
 	$(MAKE) VERSION=$(VERSION) CLI_DIR=$(CLI_DIR) ENGINE_DIR=$(ENGINE_DIR) -C $(PACKAGING_DIR) rpm
